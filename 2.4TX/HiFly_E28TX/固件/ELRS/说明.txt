@@ -1,0 +1,9 @@
+步骤：
+1，STLINK工具刷写“r9m_bootloader.bin”引导文件
+2，复制“HiFly_E28TX_ELRS3.0.elrs”到遥控TF卡
+3，发射板子插到开源遥控JR仓
+4，进入遥控TF文件浏览工具，找到“HiFly_E28TX_ELRS3.0.elrs”长按选择进入更新外部设备
+如果顺利高频头会听到蜂鸣器开机音，进入LUA测试高频头参数
+
+两个文件也可以通过STLINK分步骤从0x08000000地址先刷“r9m_bootloader.bin”引导文件，
+再从0x8004000刷入“HiFly_E28TX_ELRS3.0.elrs”主固件文件
