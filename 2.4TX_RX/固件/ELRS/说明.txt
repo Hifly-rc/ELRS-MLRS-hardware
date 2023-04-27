@@ -6,4 +6,5 @@
 如果顺利高频头会听到蜂鸣器开机音，之后进入LUA测试高频头参数
 
 两个文件也可以通过STLINK分步骤从0x08000000地址先刷“r9m_bootloader.bin”引导文件，
-再从0x8004000刷入“HiFly_E28TX_ELRS3.0.elrs”主固件文件
+再从0x8004000刷入“HiFly_TX_E28_ELRS3.0.bin”主固件文件
+接收机固件同样从从0x8004000刷入“HiFly_RX_E28_ELRS3.0.bin”主固件文件
