@@ -1,0 +1,6 @@
+注意.elrs扩展名固件都要先刷hifly_bootloader.bin引导支持（只需要刷一次），以后发射端TX固件全部改为.elrs文件发共享
+.elrs固件复制到开源遥控TF卡上，长按文件名选[更新外置ELRS模块固件]
+如果没有开源遥控要用JLINK工具分步骤刷写，先从flash 0x8000000地址刷入hifly_bootloader.bin文件，然后把.elrs固件改名为.bin，再把改名后的.bin从0x8004000地址写入
+刷写.bin文件时不能擦除bootloader固件，否则不能引导
+
+LUA可设置接收机500mW回传功率
